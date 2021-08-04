@@ -30,9 +30,4 @@
 ### путь к master к Liquibase  находится в application.properties (spring.liquibase.change-log=classpath:/data/changelog/db.changelog-master.xml) это корневой
 
 
-## Структура базы 
-
-
-## Запросы на добавление элементов
-
 
