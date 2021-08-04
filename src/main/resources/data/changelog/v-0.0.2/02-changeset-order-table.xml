@@ -9,21 +9,32 @@
     http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
     <!--    является полным аналогом коммитов управленеи версий как git -->
-    <changeSet id="2" author="e.baldji">
+    <changeSet id="4" author="e.baldji">
         <!--        сопоставление с файлом что бы не запутатся ЫЙД sqlfile- это вызов  скрипта-->
         <!--        Есть два способа создания и работ с таблиц с помощью sqlfile(это скрипт ) и мы его просто вызываем
          второй способ через xml уже пишем в ручную xml над создание таблицы -->
+        <sqlFile path="02-insert-order-item-table.sql"
+                 dbms="postgresql"
+                 relativeToChangelogFile="true"
+                 splitStatements="true"
+                 stripComments="true"/>
         <!--      свого рода метка и если что к этой метке моежем отктатися-->
-        <createTable tableName="user">
-            <column name="id" type="bigint" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="name" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-        </createTable>
+        <!--        <createTable tableName="order">-->
+        <!--            <column name="id" type="bigint" autoIncrement="true">-->
+        <!--                <constraints primaryKey="true" nullable="false"/>-->
+        <!--            </column>-->
+        <!--            <column name="name" type="varchar(255)">-->
+        <!--                <constraints nullable="true"/>-->
+        <!--            </column>-->
+        <!--        </createTable>-->
         <rollback>
-            <dropTable tableName="user"/>
+            <sqlFile path="02-delete-order-item-table.sql"
+                     dbms="postgresql"
+                     encoding="UTF-8"
+                     endDelimiter="\nGO"
+                     relativeToChangelogFile="true"
+                     splitStatements="true"
+                     stripComments="true"/>
         </rollback>
     </changeSet>
 </databaseChangeLog>
