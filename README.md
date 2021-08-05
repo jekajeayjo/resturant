@@ -29,5 +29,8 @@
 ![image](https://user-images.githubusercontent.com/37213273/128230500-cd174f24-db3e-4a48-876d-7670c963d52c.png)
 ### путь к master к Liquibase  находится в application.properties (spring.liquibase.change-log=classpath:/data/changelog/db.changelog-master.xml) это корневой
 
+путь к - swagger-ui - /swagger-ui.html#/order-controller
+![image](https://user-images.githubusercontent.com/37213273/128349971-730cb4f6-fc41-440f-945a-af573bb1e8f5.png)
+
 
 
