@@ -14,14 +14,14 @@
         <!--        сопоставление с файлом что бы не запутатся ЫЙД sqlfile- это вызов  скрипта-->
         <!--        Есть два способа создания и работ с таблиц с помощью sqlfile(это скрипт ) и мы его просто вызываем
          второй способ через xml уже пишем в ручную xml над создание таблицы -->
-        <sqlFile path="01-create-order-table.sql"
+        <sqlFile path="01-create-ref-type-food-table.sql"
                  dbms="postgresql"
                  relativeToChangelogFile="true"
                  splitStatements="true"
                  stripComments="true"/>
         <rollback>
             <sqlFile
-                    path="01-drop-order-table.sql"
+                    path="01-drop-ref-type-food-table.sql"
                     dbms="postgresql"
                     encoding="UTF-8"
                     relativeToChangelogFile="true"

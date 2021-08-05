@@ -1,0 +1,1 @@
+drop table "ref-type-user";

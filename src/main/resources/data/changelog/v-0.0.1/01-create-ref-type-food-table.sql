@@ -1,9 +1,13 @@
-create table "ref_type_food"
+create table "ref-type-food"
 (
-    id
-        id                bigint                                                       not null
-        constraint ref_type_foodkey
-        primary key,
-    name varchar(255) not null
-code varchar (255) not null
+    id bigserial
+        constraint "ref-type-food_pk"
+            primary key,
+    code varchar(255),
+    name varchar(255)
 );
+
+comment on table "ref-type-food" is 'Типы товара';
+comment on column "ref-type-food".code is 'Код товара';
+comment on column "ref-type-food".name is 'Наименование товара';
+
