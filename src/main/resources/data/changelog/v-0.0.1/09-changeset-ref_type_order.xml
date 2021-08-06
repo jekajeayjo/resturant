@@ -8,7 +8,7 @@
     http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd
     http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
-    <changeSet id="" author="e.baldji">
+    <changeSet id="10" author="e.baldji">
         <sqlFile path="09_create_ref_order_type.sql"
                  splitStatements="true"
                  stripComments="true"

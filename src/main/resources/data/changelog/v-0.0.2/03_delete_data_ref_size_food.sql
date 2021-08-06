@@ -1,0 +1,1 @@
+truncate table "ref_size_food" cascade ;

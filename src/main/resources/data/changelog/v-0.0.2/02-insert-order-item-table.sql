@@ -1,1 +1,0 @@
-insert into "order" (id,name) values (1,'test');

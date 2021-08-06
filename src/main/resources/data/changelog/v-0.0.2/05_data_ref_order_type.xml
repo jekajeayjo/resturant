@@ -8,21 +8,18 @@
     http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd
     http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
-    <changeSet id="4" author="e.baldji">
-        <sqlFile path="03-create-ref-size-food.sql"
-                 dbms="postgresql"
-                 encoding="UTF-8"
+    <changeSet id="" author="">
+        <sqlFile path="05_insert_data_ref_order_type.xml.sql"
                  stripComments="true"
+                 dbms="postgresql"
                  relativeToChangelogFile="true"
-                 splitStatements="true"
-        ></sqlFile>
+                 splitStatements="true"/>
         <rollback>
-            <sqlFile path="03-drop-ref-size-food.sql"
-                     dbms="postgresql"
+            <sqlFile path="05_delete_data_ref_order_type.xml.sql"
                      stripComments="true"
+                     dbms="postgresql"
                      relativeToChangelogFile="true"
-                     splitStatements="true"
-            />
+                     splitStatements="true"/>
         </rollback>
     </changeSet>
 </databaseChangeLog>

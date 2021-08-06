@@ -1,0 +1,1 @@
+truncate table "sub_ref_type_food" cascade ;

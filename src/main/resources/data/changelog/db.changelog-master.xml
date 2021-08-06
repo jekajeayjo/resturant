@@ -21,18 +21,20 @@
 
 
 
-    <changeSet id="2" author="e.baldji">
+    <changeSet id="1" author="e.baldji">
         <tagDatabase tag="create_tables"/>
     </changeSet>
 
     <include file="v-0.0.1/db.changelog-0.0.1.xml" relativeToChangelogFile="true"/>
+    <changeSet id="13" author="e.baldji">
+        <tagDatabase tag="add_data_in_ref"/>
+    </changeSet>
 
-<!--    <changeSet id="5" author="e.baldji">-->
-<!--        <tagDatabase tag="v-0.0.2"/>-->
-<!--    </changeSet>-->
 
-<!--    &lt;!&ndash;что бы откатится  нужны средства maven&ndash;&gt;-->
-<!--    <include file="v-0.0.2/db.changelog-0.0.2.xml" relativeToChangelogFile="true"/>-->
+
+    <!--что бы откатится  нужны средства maven-->
+<!--    Заполнение справочников-->
+    <include file="v-0.0.2/db.changelog-0.0.2.xml" relativeToChangelogFile="true"/>
 
 <!--    <changeSet id="8" author="e.baldji">-->
 <!--        <tagDatabase tag="v-0.0.3"/>-->

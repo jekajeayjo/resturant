@@ -1,8 +1,8 @@
-<databaseChangeLog      xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-                        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-                        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
-                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
     http://www.liquibase.org/xml/ns/pro
     http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd
@@ -10,8 +10,19 @@
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
     <!--    является полным аналогом коммитов управленеи версий как git -->
     <!--  relativeToChangelogFile-относительный путь от папки -->
-    <!--  этот файл относится к созданию таблицы order -->
-    <include file="02-changeset-order-table.xml" relativeToChangelogFile="true"/>
-    <include file="02-changeset-user-table.xml" relativeToChangelogFile="true"/>
+    <!--  Добавление данных  в типы товара -->
+    <include file="01_data_ref_type_food.xml" relativeToChangelogFile="true"/>
+    <!--    Тип пользователей-->
+    <include file="02_data_ref_type_user.xml" relativeToChangelogFile="true"/>
+    <!--    Тип размеров товара-->
+    <include file="03_data_ref_size_food.xml" relativeToChangelogFile="true"/>
+    <!--    Тип скидок-->
+    <include file="04_data_ref_discount_type.xml" relativeToChangelogFile="true"/>
+    <!--    Тип получение товара-->
+    <include file="05_data_ref_order_type.xml" relativeToChangelogFile="true"/>
+    <!--    Под тип товара-->
+    <include file="06_data_sub_ref_type_food.xml" relativeToChangelogFile="true"/>
+    <!--    Товары-->
+    <include file="07_data_food.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

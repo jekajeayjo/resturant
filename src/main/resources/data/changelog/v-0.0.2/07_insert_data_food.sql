@@ -1,0 +1,1 @@
+insert into "food" (id, fk_ref_food_size, fk_ref_food_sub_type, code, name, price) values (1,1,1,'CHISINAU','Пиов кишиневское',12);

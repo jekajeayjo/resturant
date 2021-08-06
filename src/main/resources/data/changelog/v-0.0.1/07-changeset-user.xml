@@ -8,7 +8,7 @@
     http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd
     http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
-    <changeSet id="" author="">
+    <changeSet id="8" author="e.baldji">
         <sqlFile path="07-create-user-table.sql"
                  dbms="postgresql"
                  splitStatements="true"
