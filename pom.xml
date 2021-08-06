@@ -59,13 +59,31 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java -->
+<!--		&lt;!&ndash; https://mvnrepository.com/artifact/com.graphql-java/graphql-java &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>com.graphql-java</groupId>-->
+<!--			<artifactId>graphql-java</artifactId>-->
+<!--			<version>230521-nf-execution</version>-->
+<!--		</dependency>-->
+
+		graphql-spring-boot-starter используется для включения сервлета GraphQL и будет доступен по пути /graphql. Он инициализирует GraphQLSchema бин.
+		graphql-java позволяет нам писать схемы на языке схем GraphQL, который прост для понимания.
+		graphiql-spring-boot-starter предоставляет пользовательский интерфейс, с помощью которого мы сможем тестировать наши запросы на GraphQL и просматривать определения запросов.
 		<dependency>
 			<groupId>com.graphql-java</groupId>
-			<artifactId>graphql-java</artifactId>
-			<version>230521-nf-execution</version>
+			<artifactId>graphql-spring-boot-starter</artifactId>
+			<version>5.0.2</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphql-java-tools</artifactId>
+			<version>5.2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphiql-spring-boot-starter</artifactId>
+			<version>5.0.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
