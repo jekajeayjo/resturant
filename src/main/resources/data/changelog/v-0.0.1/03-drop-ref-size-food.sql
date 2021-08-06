@@ -1,1 +1,1 @@
-drop  table "ref-size-food";
+drop  table "ref_size_food";

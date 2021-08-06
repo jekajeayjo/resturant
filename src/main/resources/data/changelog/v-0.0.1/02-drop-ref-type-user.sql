@@ -1,1 +1,1 @@
-drop table "ref-type-user";
+drop table "ref_type_user";

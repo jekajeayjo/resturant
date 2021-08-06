@@ -15,7 +15,7 @@ comment on column "food".name is 'Наименование';
 comment on column "food".price is 'Цена';
 alter table "food"
 add constraint "ref_food_size_fk"
-foreign key (fk_ref_food_size) references "ref-size-food";
+foreign key (fk_ref_food_size) references "ref_size_food";
 
 alter table "food"
-add constraint "ref_food_sub_type_fk" foreign key(fk_ref_food_sub_type) references "sub-ref-type-food";
+add constraint "ref_food_sub_type_fk" foreign key(fk_ref_food_sub_type) references "sub_ref_type_food";

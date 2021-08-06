@@ -11,29 +11,30 @@
     <!--    является полным аналогом коммитов управленеи версий как git -->
     <!--  relativeToChangelogFile-относительный путь от папки -->
     <!--  этот файл относится к созданию таблицы order -->
-<!--   Создание основных справочников-->
-<!--   Создание типов продуктов-->
+    <!--   Создание основных справочников-->
+    <!--   Создание типов продуктов-->
     <include file="01-changeset-ref-type-food.xml" relativeToChangelogFile="true"/>
     <!--   Создание типов пользователей-->
     <include file="02-changeset-ref-type-user.xml" relativeToChangelogFile="true"/>
     <!--   Создание размеры продуктов-->
     <include file="03-changeset-ref-size-food.xml" relativeToChangelogFile="true"/>
-    <!--   Создание типов скидок-->
-    <include file="03-changeset-ref-discount.xml" relativeToChangelogFile="true"/>
+
     <!--   Создание подсправочников -->
     <!--   Создание подтипов -->
     <include file="04-changeset-sub-ref-type-food.xml" relativeToChangelogFile="true"/>
 
     <include file="05-changeset-food.xml" relativeToChangelogFile="true"/>
     <!--   Создание типов скидок-->
-    <include file="06-changeset-ref-discount.xml" relativeToChangelogFile="true"/>
+    <include file="06_changeset_ref_discount.xml" relativeToChangelogFile="true"/>
     <!--   Создание типов скидок-->
     <include file="07-changeset-user.xml" relativeToChangelogFile="true"/>
     <!--   Создание привязки ролей к пользователям-->
     <include file="08-changeset-user-mapper-role.xml" relativeToChangelogFile="true"/>
-    <!--   Создание остальных таблиц -->
-<!--    <include file="01-changeset-create-food.xml" relativeToChangelogFile="true"/>-->
-<!--    &lt;!&ndash;    Создание таблиц пользователь&ndash;&gt;-->
-<!--    <include file="03-changeset-ref-size-food.xml" relativeToChangelogFile="true"/>-->
+    <!-- Создание типа заказа-->
+    <include file="09-changeset-ref_type_order.xml" relativeToChangelogFile="true"/>
+    <!--    Заказ-->
+    <include file="10_changeset_order.xml" relativeToChangelogFile="true"/>
+<!--    Детальная информация о заказа-->
+    <include file="11_changeset_order_detail.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

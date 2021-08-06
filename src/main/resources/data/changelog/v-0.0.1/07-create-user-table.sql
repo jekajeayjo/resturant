@@ -1,4 +1,4 @@
-create table ""
+create table "user"
 (
     id                   bigserial
         constraint "user_pk" primary key not null,
@@ -15,4 +15,4 @@ comment on column "user".ot is 'Отчество';
 comment on column "user".birthdate is 'Дата рождения';
 comment on column "user".fk_ref_discount_type is 'Тип скидки';
 alter table "user"
-    add constraint "ref-discount-type_fk" foreign key (fk_ref_discount_type) references "ref-discount-type";
+    add constraint "ref_discount_type_fk" foreign key (fk_ref_discount_type) references "ref_discount_type";

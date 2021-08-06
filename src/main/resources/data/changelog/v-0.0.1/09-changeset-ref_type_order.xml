@@ -8,20 +8,19 @@
     http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd
     http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
-    <changeSet id="" author="">
-        <sqlFile
-                path="06-create-ref-discout-type.sql"
-                dbms="postgresl"
-                stripComments="true"
-                relativeToChangelogFile="true"
-                splitStatements="true"
+    <changeSet id="" author="e.baldji">
+        <sqlFile path="09_create_ref_order_type.sql"
+                 splitStatements="true"
+                 stripComments="true"
+                 relativeToChangelogFile="true"
+                 dbms="postgresql"
         />
         <rollback>
-            <sqlFile path="06-drop-ref-discout-type.sql"
-                     dbms="postgresl"
-                     relativeToChangelogFile="true"
-                     stripComments="true"
+            <sqlFile path="09_drop_ref_order_type.sql"
+                     dbms="postgresql"
                      splitStatements="true"
+                     stripComments="true"
+                     relativeToChangelogFile="true"
             />
         </rollback>
     </changeSet>
